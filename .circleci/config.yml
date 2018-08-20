@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  unit-test:
+  build:
     docker:
       - image: eddiewebb/php:7.2-apache-intl
       - image: mysql:latest
