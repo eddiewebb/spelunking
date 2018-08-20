@@ -1,0 +1,11 @@
+version: 2
+jobs:
+  unit-test:
+    docker:
+      - image: eddiewebb/php:7.2-apache-intl
+      - image: mysql:latest
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run: whomai
+      - run: php -v
